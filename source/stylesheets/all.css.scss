@@ -15,6 +15,9 @@
 
 
 // ------------------------------------------------------------------------------------//
+
+// -----------------------------------------------------------------------------//
+
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -135,7 +138,9 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff;
+    color: #34373E;
+    -webkit-text-stroke-color: #1B1A22;
+    -webkit-text-stroke-width: 0.2px;
 }
 .navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
     color: #fed136;
@@ -150,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     background-color: #fec503;
 }
-@media (min-width:768px) {
+@media(min-width:768px){
     .navbar-default {
     background-color: transparent;
     padding: 25px 0;
@@ -175,8 +180,9 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-default.navbar-shrink .navbar-brand {
     font-size: 1.5em;
 }
-}header {
-    background-image: url(../img/header-bg.jpg);
+}
+header {
+    background-image: url(../images/header-bg.jpg);
     background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
@@ -206,7 +212,7 @@ header .intro-text .intro-heading {
     line-height: 50px;
     margin-bottom: 25px;
 }
-@media (min-width:768px) {
+@media(min-width:768px) {
     header .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
@@ -226,7 +232,8 @@ header .intro-text .intro-heading {
     line-height: 75px;
     margin-bottom: 50px;
 }
-}section {
+}
+section {
     padding: 100px 0;
 }
 section h2.section-heading {
@@ -242,9 +249,8 @@ section h3.section-subheading {
     font-weight: 400;
     margin-bottom: 75px;
 }
-@media (min-width:768px) {
-    section {
-    padding: 150px 0;
+@media(min-width:768px){
+    section { padding: 150px 0;
 }
 }.service-heading {
     margin: 15px 0;
@@ -313,7 +319,8 @@ section h3.section-subheading {
     #portfolio .portfolio-item {
     margin: 0 0 30px;
 }
-}.timeline {
+}
+.timeline {
     list-style: none;
     padding: 0;
     position: relative;
@@ -407,10 +414,11 @@ section h3.section-subheading {
 .timeline .timeline-body>p, .timeline .timeline-body>ul {
     margin-bottom: 0;
 }
-@media (min-width:768px) {
-    .timeline: before {
-    left: 50%}
-.timeline>li {
+@media(min-width:768px){
+    .timeline:before {
+    left: 50%;
+  }
+    .timeline>li {
     margin-bottom: 100px;
     min-height: 100px;
 }
@@ -436,7 +444,8 @@ section h3.section-subheading {
     text-align: left;
     padding: 0 30px 20px 20px;
 }
-}@media (min-width:992px) {
+}
+@media(min-width:992px) {
     .timeline>li {
     min-height: 150px;
 }
@@ -456,7 +465,8 @@ section h3.section-subheading {
 .timeline>li.timeline-inverted>.timeline-panel {
     padding: 0 20px 20px;
 }
-}@media (min-width:1200px) {
+}
+@media(min-width:1200px) {
     .timeline>li {
     min-height: 170px;
 }
@@ -474,7 +484,8 @@ section h3.section-subheading {
 .timeline>li.timeline-inverted>.timeline-panel {
     padding: 0 100px 20px 20px;
 }
-}.team-member {
+}
+.team-member {
     text-align: center;
     margin-bottom: 50px;
 }
@@ -495,7 +506,7 @@ aside.clients img {
 }
 section#contact {
     background-color: #222;
-    background-image: url(../img/map-image.png);
+    background-image: url(../images/map-image.png);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -667,4 +678,39 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136;
 }
-// -----------------------------------------------------------------------------//
+
+// ------------------------------------------------------------------------//
+
+
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+//---------------------------------------------------------------------------------//
+
+

@@ -1,10 +1,12 @@
 //= require jquery
 //= require bootstrap-sprockets
-//= agency
-//= bootstrap
-//= cbpAnimatedHeader
-//= classie
-//= contact_me
-//= jqBootstrapValidation
-//= jquery
-//= require_tree
+//= require bootstrap
+//= require classie
+//= require cbpAnimatedHeader
+//= require jqBootstrapValidation
+//= require contact_me
+//= require agency
+//= require_tree .
+
+
+
