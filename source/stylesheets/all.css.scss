@@ -713,4 +713,50 @@ body {
 }
 //---------------------------------------------------------------------------------//
 
-
+/* ==================================================
+  app-banner
+====================================================*/
+#app-banner {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  display: table;
+}
+#app-banner .banner-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+#app-banner .banner-content h1 {
+  font-size: 50px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+#app-banner .banner-content h1 span {
+  color: red;
+}
+#app-banner .banner-content p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 24px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+#app-banner .banner-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#app-banner .banner-content ul li {
+  margin: 14px 0;
+}
+#app-banner .banner-content ul li i {
+  margin-right: 8px;
+}
+#app-banner .banner-content .app-image img {
+  margin: 0 auto;
+}
+@media(max-width: 768px){
+  #typed-banner .banner-content h1 span {
+    display: block;
+  }
+}
