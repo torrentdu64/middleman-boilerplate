@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     background-color: #fec503;
 }
-@media(min-width:768px){
+@media (min-width:768px) {
     .navbar-default {
     background-color: transparent;
     padding: 25px 0;
@@ -212,7 +212,7 @@ header .intro-text .intro-heading {
     line-height: 50px;
     margin-bottom: 25px;
 }
-@media(min-width:768px) {
+@media (min-width:768px) {
     header .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
@@ -249,7 +249,7 @@ section h3.section-subheading {
     font-weight: 400;
     margin-bottom: 75px;
 }
-@media(min-width:768px){
+@media (min-width:768px) {
     section { padding: 150px 0;
 }
 }.service-heading {
@@ -329,7 +329,7 @@ section h3.section-subheading {
     top: 0;
     bottom: 0;
     position: absolute;
-    content: "";
+    content: " ";
     width: 2px;
     background-color: #f1f1f1;
     left: 40px;
@@ -414,7 +414,7 @@ section h3.section-subheading {
 .timeline .timeline-body>p, .timeline .timeline-body>ul {
     margin-bottom: 0;
 }
-@media(min-width:768px){
+@media (min-width:768px) {
     .timeline:before {
     left: 50%;
   }
@@ -445,7 +445,7 @@ section h3.section-subheading {
     padding: 0 30px 20px 20px;
 }
 }
-@media(min-width:992px) {
+@media (min-width:992px) {
     .timeline>li {
     min-height: 150px;
 }
@@ -466,7 +466,7 @@ section h3.section-subheading {
     padding: 0 20px 20px;
 }
 }
-@media(min-width:1200px) {
+@media (min-width:1200px) {
     .timeline>li {
     min-height: 170px;
 }
@@ -755,8 +755,71 @@ body {
 #app-banner .banner-content .app-image img {
   margin: 0 auto;
 }
-@media(max-width: 768px){
+@media (max-width: 768px) {
   #typed-banner .banner-content h1 span {
     display: block;
   }
 }
+// ------------------------------------------------------------------------//
+// contact relative to app mobile
+#team {
+  position: relative;
+}
+#app-banner{
+  left: 700px;
+  top: 30px;
+}
+// ---------------------------------------------------------------------------//
+// parallax
+#parallax {
+  margin: -80px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.clients{
+  perspective: 1px;
+  height: 40vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
