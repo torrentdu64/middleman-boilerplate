@@ -813,10 +813,23 @@ body {
   line-height: 31px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
-@media (max-width: 768px) {
-  #typed-banner .banner-content h1 span {
-    display: block;
-  }
+// @media (max-width: 480px) {
+//   #typed-banner>.banner-content>h1>span {
+//     display: inline-block;
+//     font-size: 25px;
+//     min-height: 100%;
+//   }
+// }
+
+@media (max-width: 580px) {
+    .banner-content h1 {
+        color: #fec503 !important;
+        font-size: 30px !important;
+        display: inline-block;
+        font-size: 1em;
+        min-height: 35px;}
+    p {
+    color: #fec503 !important;}
 }
 
 // -----------------------------------------------------------------------//
@@ -832,24 +845,28 @@ body {
 
 
 // ----------------------------------------------------------------------//
+// animation triggering
 
+#resize {
+  box-sizing: content-box;
+}
 
-@media screen and (max-width: 800px) {
-  #resize {
-    padding: 50px 0 0;
-    min-height: 180px;
-    font-size: 1.75em; } }
-@media screen and (max-width: 600px) {
-  #resize {
-    padding: 30px 0 0;
-    min-height: 150px;
-    font-size: 1.5em; } }
-@media screen and (max-width: 550px) {
-  #resize {
-    padding: 20px 0 0;
-    font-size: 1em;
-    min-height: 110px;
-    margin: 0 -100px; } }
+// @media screen and (max-width: 800px) {
+//   #resize {
+//     padding: 50px 0 0;
+//     min-height: 180px;
+//     font-size: 1.75em; } }
+// @media screen and (max-width: 600px) {
+//   #resize {
+//     padding: 30px 0 0;
+//     min-height: 150px;
+//     font-size: 1.5em; } }
+// @media screen and (max-width: 550px) {
+//   #resize {
+//     padding: 20px 0 0;
+//     font-size: 1em;
+//     min-height: 110px;
+//     margin: 0 -100px; } }
 
 
 
