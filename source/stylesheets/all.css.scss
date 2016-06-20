@@ -182,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 }
 header {
-    background-image: url(../images/header-bg.jpg);
+    // background-image: url(../images/header-bg.jpg);
     background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
@@ -215,7 +215,7 @@ header .intro-text .intro-heading {
 @media (min-width:768px) {
     header .intro-text {
     padding-top: 300px;
-    padding-bottom: 200px;
+    padding-bottom: 50px;
 }
 header .intro-text .intro-lead-in {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -250,7 +250,7 @@ section h3.section-subheading {
     margin-bottom: 75px;
 }
 @media (min-width:768px) {
-    section { padding: 150px 0;
+    section { padding: 70px 0;
 }
 }.service-heading {
     margin: 15px 0;
@@ -683,83 +683,83 @@ body {
 
 
 @media (max-width: 991px) {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-collapse.collapse.in {
-        display: block!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin: 7.5px -15px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+  .navbar-header {
+      float: none;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-collapse.collapse.in {
+      display: block!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin: 7.5px -15px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
 }
 //---------------------------------------------------------------------------------//
 
 /* ==================================================
   app-banner
 ====================================================*/
-#app-banner {
-  position: absolute;
-  width: 100%;
-  min-height: 100%;
-  display: table;
-}
-#app-banner .banner-content {
-  display: table-cell;
-  vertical-align: middle;
-}
-#app-banner .banner-content h1 {
-  font-size: 50px;
-  color: #fff;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-#app-banner .banner-content h1 span {
-  color: red;
-}
-#app-banner .banner-content p {
-  font-size: 16px;
-  color: #fff;
-  line-height: 24px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-}
-#app-banner .banner-content ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-#app-banner .banner-content ul li {
-  margin: 14px 0;
-}
-#app-banner .banner-content ul li i {
-  margin-right: 8px;
-}
-#app-banner .banner-content .app-image img {
-  margin: 0 auto;
-}
-@media (max-width: 768px) {
-  #typed-banner .banner-content h1 span {
-    display: block;
-  }
-}
+// #app-banner {
+//   position: absolute;
+//   width: 100%;
+//   min-height: 100%;
+//   display: table;
+// }
+// #app-banner .banner-content {
+//   display: table-cell;
+//   vertical-align: middle;
+// }
+// #app-banner .banner-content h1 {
+//   font-size: 50px;
+//   color: #fff;
+//   font-weight: bold;
+//   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+// }
+// #app-banner .banner-content h1 span {
+//   color: red;
+// }
+// #app-banner .banner-content p {
+//   font-size: 16px;
+//   color: #fff;
+//   line-height: 24px;
+//   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+// }
+// #app-banner .banner-content ul {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
+// #app-banner .banner-content ul li {
+//   margin: 14px 0;
+// }
+// #app-banner .banner-content ul li i {
+//   margin-right: 8px;
+// }
+// #app-banner .banner-content .app-image img {
+//   margin: 0 auto;
+// }
+// @media (max-width: 768px) {
+//   #typed-banner .banner-content h1 span {
+//     display: block;
+//   }
+// }
 // ------------------------------------------------------------------------//
 // contact relative to app mobile
 #team {
@@ -819,12 +819,37 @@ body {
   }
 }
 
+// -----------------------------------------------------------------------//
+
+// image home background
+#image_home {
+  max-width: 100%;
+  position: absolute;
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
 
 
+// ----------------------------------------------------------------------//
 
 
-
-
+@media screen and (max-width: 800px) {
+  #resize {
+    padding: 50px 0 0;
+    min-height: 180px;
+    font-size: 1.75em; } }
+@media screen and (max-width: 600px) {
+  #resize {
+    padding: 30px 0 0;
+    min-height: 150px;
+    font-size: 1.5em; } }
+@media screen and (max-width: 550px) {
+  #resize {
+    padding: 20px 0 0;
+    font-size: 1em;
+    min-height: 110px;
+    margin: 0 -100px; } }
 
 
 

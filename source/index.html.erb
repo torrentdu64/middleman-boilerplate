@@ -43,15 +43,18 @@
 
   <!-- Header -->
   <header>
+    <%= image_tag 'header-bg.jpg', id: 'image_home' %>
     <div class="container">
-      <div class="intro-text">
+      <div class="intro-text ">
         <!-- typed-banner -->
         <section id="typed-banner" class="section">
           <div class="banner-content">
             <div class="container">
+              <div class="row">
               <h1>COACHING <span class="element"></span></h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper <br> diam nec augue semper,in dignissim elit hendrerit. </p>
+              <p>Sante bien etre <br> je me lance . </p>
               <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+              </div>
             </div>
           </div>
         </section>
@@ -78,7 +81,7 @@
           $(function(){
             if($('.element').length > 0){
               $(".element").typed({
-              strings: [" ^1000 SUR PAU", " ^1000 SANTE", " ^1000 JULIEN"],
+              strings: [" ^1000 SUR PAU", " ^1000 NEO", " ^1000 JULIEN"],
               typeSpeed: 80,
               loop: true,
               showCursor: false
@@ -91,14 +94,14 @@
   <section id="services">
       <div class="container">
           <div class="row">
-              <div class="col-lg-12 text-center">
+              <div class="col-lg-12 text-center ">
                   <h2 class="section-heading">Services</h2>
                   <h3 class="section-subheading text-muted">Nés pour bouger et vivre en bonne santé.</h3>
               </div>
           </div>
           <div class="row text-center">
               <div class="col-md-4">
-                  <span class="fa-stack fa-4x">
+                  <span class="fa-stack fa-4x wow lightSpeedIn " data-wow-delay="1000ms">
                       <i class="fa fa-circle fa-stack-2x text-primary"></i>
                       <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
                   </span>
@@ -106,7 +109,7 @@
                   <p class="text-muted">Une relation de confiance et de convivialité s’installera rapidement pour « booster » votre motivation et votre pratique sportive.</p>
               </div>
               <div class="col-md-4">
-                  <span class="fa-stack fa-4x">
+                  <span class="fa-stack fa-4x wow lightSpeedIn" data-wow-delay="2000ms">
                       <i class="fa fa-circle fa-stack-2x text-primary"></i>
                       <i class="fa fa-map-o fa-stack-1x fa-inverse"></i>
                   </span>
@@ -114,7 +117,7 @@
                   <p class="text-muted">Une relation de confiance et de convivialité s’installera rapidement pour « booster » votre motivation et votre pratique sportive. Vous déterminerez ensemble le programme en terme de contenus de séances, de suivi alimentaire et d'emplois du temps. Dès lors, votre coach sportif saura personnaliser et optimiser son programme et ses séances.</p>
               </div>
               <div class="col-md-4">
-                  <span class="fa-stack fa-4x">
+                  <span class="fa-stack fa-4x wow lightSpeedIn" data-wow-delay="3000ms">
                       <i class="fa fa-circle fa-stack-2x text-primary"></i>
                       <i class="fa fa-heartbeat fa-stack-1x fa-inverse"></i>
                   </span>
@@ -130,8 +133,8 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6 .col-md-6">
-          <%= image_tag 'fitness-lowcoast-rue-du-bien-etre.jpg', height: '150', width: '200' %>
-          <%= image_tag 'images-2.jpg', height: '150', width: '200' %>
+          <%= image_tag 'fitness-lowcoast-rue-du-bien-etre.jpg', height: '150', width: '200', class: "wow bounceInRight" %>
+          <%= image_tag 'images-2.jpg', height: '150', width: '200', class: "wow bounceInUp" %>
         </div>
         <br>
         <br>
@@ -145,8 +148,8 @@
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-6 .col-md-6">
-          <%= image_tag 'images-3.jpg', height: '150', width: '200' %>
-          <%= image_tag 'images.jpg', height: '150', width: '200' %>
+          <%= image_tag 'images-3.jpg', height: '150', width: '200', class: "wow bounceInRight" %>
+          <%= image_tag 'images.jpg', height: '150', width: '200', class: "wow bounceInUp" %>
         </div>
         <br>
         <br>
@@ -176,9 +179,9 @@
           <div class="row">
               <div class="col-lg-12">
                   <ul class="timeline">
-                      <li>
+                      <li class="wow rollIn">
                           <div class="timeline-image">
-                              <img class="img-circle img-responsive" src="images/av1.jpg" alt="">
+                              <img class="img-circle img-responsive " src="images/av1.jpg" alt="">
                           </div>
                           <div class="timeline-panel">
                               <div class="timeline-heading">
@@ -190,7 +193,7 @@
                               </div>
                           </div>
                       </li>
-                      <li class="timeline-inverted">
+                      <li class="timeline-inverted wow rollIn">
                           <div class="timeline-image">
                               <img class="img-circle img-responsive" src="images/av2.jpg" alt="">
                           </div>
@@ -204,7 +207,7 @@
                               </div>
                           </div>
                       </li>
-                      <li>
+                      <li class="wow rollIn">
                           <div class="timeline-image">
                               <img class="img-circle img-responsive" src="images/av3.jpg" alt="">
                           </div>
@@ -218,7 +221,7 @@
                               </div>
                           </div>
                       </li>
-                      <li class="timeline-inverted">
+                      <li class="timeline-inverted wow rollIn">
                           <div class="timeline-image">
                               <img class="img-circle img-responsive" src="images/av1.jpg" alt="">
                           </div>
@@ -233,7 +236,7 @@
                               </div>
                           </div>
                       </li>
-                      <li class="timeline-inverted">
+                      <li class="timeline-inverted wow rollIn">
                           <div class="timeline-image">
                               <h4>Néo
                                   <br>&
@@ -272,7 +275,7 @@
               </div>
             </div>
             <!-- app-banner -->
-            <section id="app-banner" class="section">
+            <section id="app-banner" class="wow tada section" data-wow-iteration="infinite" data-wow-duration="2500ms">
               <div class="banner-content">
                 <div class="container">
                   <div class="row">
