@@ -1,6 +1,6 @@
 <div id="page-top" class="index">
   <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-fixed-top" >
+  <nav class="navbar navbar-default navbar-fixed-top section active" >
       <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header page-scroll">
@@ -43,14 +43,49 @@
 
   <!-- Header -->
   <header>
-      <div class="container">
-          <div class="intro-text">
-              <div class="intro-lead-in">Welcome</div>
-              <div class="intro-heading">Coaching Sportif</div>
+    <div class="container">
+      <div class="intro-text">
+        <!-- typed-banner -->
+        <section id="typed-banner" class="section">
+          <div class="banner-content">
+            <div class="container">
+              <h1>COACHING <span class="element"></span></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper <br> diam nec augue semper,in dignissim elit hendrerit. </p>
               <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+            </div>
           </div>
+        </section>
+        <!-- ./typed-banner -->
       </div>
+    </div>
   </header>
+  <script> var wow = new WOW(
+            {
+            boxClass:     'wow',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset:       100,          // distance to the element when triggering the animation (default is 0)
+            mobile:       true,       // trigger animations on mobile devices (default is true)
+            live:         true,       // act on asynchronously loaded content (default is true)
+            callback:     function(box) {
+              // the callback is fired every time an animation is started
+              // the argument that is passed in is the DOM node being animated
+            },
+            scrollContainer: null // optional scroll container selector, otherwise use window
+            }
+          );
+          wow.init();
+
+          $(function(){
+            if($('.element').length > 0){
+              $(".element").typed({
+              strings: [" ^1000 SUR PAU", " ^1000 SANTE", " ^1000 JULIEN"],
+              typeSpeed: 80,
+              loop: true,
+              showCursor: false
+              });
+            }
+          });
+  </script>
 
   <!-- Services Section -->
   <section id="services">
@@ -510,6 +545,7 @@
       </div>
   </div>
 
+
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
 
@@ -527,5 +563,6 @@
 
   <!-- Custom Theme JavaScript -->
   <script src="js/agency.js"></script>
+
 
 </div>

@@ -785,8 +785,39 @@ body {
   background-repeat: no-repeat;
 }
 
-
-
+/* ==================================================
+  typed-banner
+====================================================*/
+#typed-banner {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  display: table;
+}
+#typed-banner .banner-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+#typed-banner .banner-content h1 {
+  font-size: 65px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+#typed-banner .banner-content h1 span {
+  color: #f26522;
+}
+#typed-banner .banner-content p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 31px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+  #typed-banner .banner-content h1 span {
+    display: block;
+  }
+}
 
 
 

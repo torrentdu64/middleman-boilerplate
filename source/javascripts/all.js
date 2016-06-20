@@ -6,6 +6,7 @@
 //= require jqBootstrapValidation
 //= require contact_me
 //= require agency
+//= require wow
 //= require_tree .
 
 
