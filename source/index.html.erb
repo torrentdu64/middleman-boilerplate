@@ -10,7 +10,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand page-scroll wow zoomInUp" data-wow-offset="400" data-wow-duration="3s" href="#page-top">Néo Coaching</a>
+              <a class="navbar-brand page-scroll wow zoomInUp" data-wow-offset="400" data-wow-duration="2s" href="#page-top">Néo Coaching</a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -24,6 +24,9 @@
                   </li>
                   <li>
                       <a class="page-scroll" href="#portfolio">Event</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#pricing">Tarifs</a>
                   </li>
                   <li>
                       <a class="page-scroll" href="#about">Coaching</a>
@@ -163,6 +166,7 @@
         <div class="col-xs-12 col-sm-6 ">
           <% image_tag '' %>
         </div>
+        <%= data %>
       </div>
     </div>
   </section>
@@ -170,27 +174,28 @@
   <br>
   <br>
   <br>
-  <section id="" class="bg-light-gray">
+  <section id="pricing" class="bg-light-gray">
     <div class="container">
+     <h1 class="text-center pad ">Tarifs</h1>
       <div class="row">
         <div class="col-xs-12 col-sm-12 .col-md-12">
           <div class="plans">
-            <div class="plan-box">
+            <div class="plan-box wow bounceIn" data-wow-delay="1000ms">
               <div class="plan-options">
                 <p class="plan-name">
                   Personal
                 </p>
                 <div class="plan-price">
-                  <strong>Free</strong>
+                  <strong>Séance</strong>    1 Séance : 55 euros
                 </div>
                  <ul class="plan-details">
-                   <li>1 sub-domain</li>
-                   <li><strong>10</strong> email addresses</li>
-                   <li><strong>Unlimited</strong> Bandwidth</li>
-                   <li><strong>20GB</strong> Storage</li>
-                   <li>Support Ads</li>
-                   <li>Shared Hosting</li>
-                   <li><strong>24/7</strong> Customer Support</li>
+                   <li>1</li> Séance
+                   <li><strong>55</strong>Euros</li>
+                   <li><strong>1H</strong> Coaching</li>
+                   <li><strong></strong> Conseil</li>
+                   <li>nutrision</li>
+                   <li>repos</li>
+                   <li><strong>24/7</strong> </li>
                 </ul>
 
                 <div class="element-hidden more-options">
@@ -204,20 +209,20 @@
               </div>
             </div>
 
-            <div class="plan-box">
+            <div class="plan-box wow bounceIn" data-wow-delay="1000ms">
               <div class="plan-options">
                 <p class="plan-name">
-                  Premium
+                  Pack
                 </p>
                 <div class="plan-price">
-                  <strong>$19</strong>/mo
+                  <strong>5</strong>Séance
                 </div>
                  <ul class="plan-details">
-                   <li><strong>FREE</strong> custom domain</li>
-                   <li><strong>Unlimited</strong> email addresses</li>
-                   <li><strong>Unlimited</strong> Bandwidth</li>
-                   <li><strong>100GB</strong> Storage</li>
-                   <li><strong>No Support Ads</strong></li>
+                   <li><strong>250</strong> euros</li>
+                   <li><strong>50</strong> euros la séance</li>
+                   <li><strong>5H</strong> Coaching</li>
+                   <li><strong></strong> Conseil</li>
+                   <li><strong>Nutrision</strong></li>
                    <li><strong>24/7</strong> Customer Support</li>
                 </ul>
 
@@ -240,17 +245,17 @@
               </div>
             </div>
 
-            <div class="plan-box">
+            <div class="plan-box wow bounceIn" data-wow-delay="1000ms">
               <div class="plan-options">
                 <p class="plan-name">
-                  Pro
+                  Pack
                 </p>
                 <div class="plan-price">
-                  <strong>$50</strong>/mo
+                  <strong>10</strong>séances
                 </div>
                  <ul class="plan-details">
-                   <li><strong>FREE</strong> custom domain</li>
-                   <li><strong>Unlimited</strong> email addresses</li>
+                   <li><strong> 450</strong> euros</li>
+                   <li><strong>45 </strong>  euros la séance</li>
                    <li><strong>Unlimited</strong> Bandwidth</li>
                    <li><strong>200GB</strong> Storage</li>
                    <li><strong>No Support Ads</strong></li>
@@ -396,7 +401,11 @@
                   <div class="row">
                     <div class="col-md-5 col-sm-6">
                       <div class="app-image">
-                        <img src="images/Group.png" alt="iphone" class="img-responsive">
+                        <img src="images/Group.png" alt="iphone" class="img-responsive" data-toggle="tooltip" data-placement="right" title="090909090909">
+                        <script>  $(function () {
+                                    $('[data-toggle="tooltip"]').tooltip()
+                                  });
+                        </script>
                       </div>
                     </div>
                   </div>
@@ -422,47 +431,47 @@
 
   <!-- Contact Section -->
   <section id="contact">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12 text-center">
-                  <h2 class="section-heading">Contact Us</h2>
-                  <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-lg-12">
-                  <form name="sentMessage" id="contactForm" novalidate>
-                      <div class="row">
-                          <div class="col-md-6">
-                              <div class="form-group">
-                                  <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-                                  <p class="help-block text-danger"></p>
-                              </div>
-                              <div class="form-group">
-                                  <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                  <p class="help-block text-danger"></p>
-                              </div>
-                              <div class="form-group">
-                                  <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                  <p class="help-block text-danger"></p>
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="form-group">
-                                  <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                  <p class="help-block text-danger"></p>
-                              </div>
-                          </div>
-                          <div class="clearfix"></div>
-                          <div class="col-lg-12 text-center">
-                              <div id="success"></div>
-                              <button type="submit" class="btn btn-xl">Send Message</button>
-                          </div>
-                      </div>
-                  </form>
-              </div>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Contact Us</h2>
+          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
       </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                    <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                    <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                  <button type="submit" class="btn btn-xl">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
